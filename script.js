@@ -45,6 +45,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
 
     // Abre el enlace de WhatsApp en una nueva pestaña
     window.open(enlaceWhatsApp);
+    document.getElementById('formulario').reset();
 });
 
 
