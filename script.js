@@ -31,22 +31,29 @@ document.querySelectorAll('nav a').forEach((link) => {
 
 // Enviar mensaje de WhatsApp desde el formulario
 document.getElementById('formulario').addEventListener('submit', function (event) {
-    event.preventDefault();
-    var nombre = document.getElementsByName('nombre')[0].value;
-    var email = document.getElementsByName('email')[0].value;
-    var mensaje = document.getElementsByName('mensaje')[0].value;
-    var telefono =  +5491156632971;
+    event.preventDefault();// no recarga la pagina
+    let nombre = document.getElementsByName('nombre')[0].value;
+    let email = document.getElementsByName('email')[0].value;
+    let mensaje = document.getElementsByName('mensaje')[0].value;
+    let telefono =  +5491156632971;
 
     // Formato del mensaje de WhatsApp
-    var mensajeWhatsApp = '¡Hola! Mi nombre es ' + nombre + '. Mi email es ' + email + '. Mi mensaje es: ' + mensaje;
+    let mensajeWhatsApp = '¡Hola! Mi nombre es ' + nombre + '. Mi email es ' + email + '. Mi mensaje es: ' + mensaje;
 
     // Genera el enlace de WhatsApp
-    var enlaceWhatsApp = 'https://wa.me/' + telefono + '?text=' + encodeURIComponent(mensajeWhatsApp);
+    let enlaceWhatsApp = 'https://wa.me/' + telefono + '?text=' + encodeURIComponent(mensajeWhatsApp);
 
     // Abre el enlace de WhatsApp en una nueva pestaña
     window.open(enlaceWhatsApp);
-    document.getElementById('formulario').reset();
+    //borra formulario
+    document.getElementById('formulario').reset(); 
 });
+
+
+
+
+
+
 
 
 
