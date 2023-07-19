@@ -116,7 +116,6 @@ nav a:hover {
 #sobremi {
     background-image: url("../assets/sobre_mi2.jpg");
     background-size: cover;
-    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
@@ -281,7 +280,6 @@ footer {
     background-repeat: no-repeat;
     color: white;
     padding: 50px;
-    height: 100vh;
 }
 
 #contacto .contenido {
@@ -301,7 +299,6 @@ footer {
     background-repeat: no-repeat;
     color: white;
     padding: 50px;
-    height: 100vh;
 }
 
 #habilidades .contenido {
