@@ -35,7 +35,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
     var nombre = document.getElementsByName('nombre')[0].value;
     var email = document.getElementsByName('email')[0].value;
     var mensaje = document.getElementsByName('mensaje')[0].value;
-    var telefono = '1156632971';
+    var telefono =  +5491156632971;
 
     // Formato del mensaje de WhatsApp
     var mensajeWhatsApp = '¡Hola! Mi nombre es ' + nombre + '. Mi email es ' + email + '. Mi mensaje es: ' + mensaje;
