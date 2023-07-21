@@ -44,6 +44,8 @@ body {
 }
 .navbar{
     background-color: #000000 !important;
+    position: fixed;
+    top: 0;
 }
 
 #navbarCollapse.show {
@@ -280,6 +282,9 @@ button {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+#contacto{
+    height: 90vh;
 }
 
 button {

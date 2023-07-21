@@ -63,9 +63,21 @@ function retractSidebar() {
   
 
 
+//----------------------------------------------------------------------------
 
 
-
+$(document).ready(function() {
+    // Cambiar el enlace activo a medida que se desplaza la página
+    $(window).on('scroll', function() {
+        var scrollDistance = $(window).scrollTop() +50;
+        $('section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                $('#navbar a.nav-link.active').removeClass('active');
+                $('#navbar a.nav-link').eq(i).addClass('active');
+            }
+        });
+    });
+});
 
 
 
