@@ -31,8 +31,12 @@ body {
     height: 100%;
     width: 250px;
     padding: 15px;
-    background-color: #333;
+    background-color: #000000;
     transition: left 0.3s ease;
+    /* poner una imagen de foindo*/
+}
+.navbar{
+    background-color: #000000 !important;
 }
 
 #navbarCollapse.show {
