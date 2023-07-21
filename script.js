@@ -49,7 +49,18 @@ document.getElementById('formulario').addEventListener('submit', function (event
     document.getElementById('formulario').reset(); 
 });
 
-
+//----------------------------------------------------
+// Función para retraer el sidebar al hacer clic en cualquier parte de la pantalla
+function retractSidebar() {
+    const navbarCollapse = document.getElementById('navbarCollapse');
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+    }
+  }
+  
+  // Agregar un evento de clic al documento
+  document.addEventListener('click', retractSidebar);
+  
 
 
 
