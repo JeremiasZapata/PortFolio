@@ -22,9 +22,16 @@ body {
     #navbarCustom {
         display: none;
     }
+    
 }
+
+
 /* Custom styles for the left sidebar */
 #navbarCollapse {
+    background-image: url("../assets/backgrondsidebar.jpg");
+    background-size: cover;
+    background-position: center;
+
     position: fixed;
     top: 0;
     left: -250px; /* Width of the navbar */
